@@ -1,0 +1,18 @@
+<!-- components/message-box/message-box.wxml -->
+<view wx:if="{{visible}}" class="msg-pop {{visible ? 'show' : 'hide'}}">
+    <view class="mask"></view>
+    <view class="message-container">
+        <view class="{{title ? 'header' : 'no-title'}}">
+            <view class="title">{{title}}</view>
+            <view class="icon" bindtap="onClose">
+                <text>+</text>
+            </view>
+        </view>
+        <view class="content">
+            <slot name="content"></slot>
+        </view>
+        <view class="footer">
+            <view class="ok-btn" bindtap="jumpToHugoVipMiniApp">{{btnText}}</view>
+        </view>
+    </view>
+</view>
