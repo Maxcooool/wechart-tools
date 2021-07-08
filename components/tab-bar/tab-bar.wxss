@@ -1,0 +1,56 @@
+@import '../../fonts/iconfont.wxss';
+
+.tab-bar {
+    z-index: 90;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 140rpx;
+    padding: 20rpx 0 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.tab-bar::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    border-top: 1px solid rgba(167, 167, 167, 1);
+    transform-origin: 0 0;
+    transform: scale(0.5);
+}
+
+.tab-item {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0 40rpx;
+    font-size: 0;
+}
+
+.iconfont {
+    margin-bottom: 10rpx;
+    font-size: 42rpx;
+    line-height: 1;
+}
+
+.text {
+    display: flex;
+    padding: 4rpx 0;
+    font-size: 25rpx;
+    font-weight: bold;
+    color: rgba(43, 43, 43, 1);
+    line-height: 1;
+}
+
+.text .word {
+    margin: 0 4rpx;
+}

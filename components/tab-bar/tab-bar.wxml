@@ -1,0 +1,44 @@
+<view class="tab-bar border-1">
+    <block wx:if="{{hide!==0}}">
+        <view
+            class="tab-item"
+            bind:tap="toggleTabBar"
+            data-index="{{0}}"
+        >
+            <view class="iconfont {{index===0?'iconhome-icon-home-select':'iconhome-icon-home'}}"></view>
+            <view class="text">
+                <view class="word">主</view>
+                <view class="word">页</view>
+            </view>
+        </view>
+    </block>
+
+    <block wx:if="{{hide!==1}}">
+        <view
+            class="tab-item"
+            bind:tap="toggleTabBar"
+            data-index="{{1}}"
+        >
+            <view class="iconfont {{index===1?'iconshoping-icon-select':'iconshoping-icon'}}"></view>
+            <view class="text">
+                <view class="word">购</view>
+                <view class="word">物</view>
+                <view class="word">袋</view>
+            </view>
+        </view>
+    </block>
+
+    <block wx:if="{{hide!==2}}">
+        <view
+            class="tab-item"
+            bind:tap="toggleTabBar"
+            data-index="{{2}}"
+        >
+            <view class="iconfont {{index===2?'iconwo-icon-select':'iconwo-icon'}}"></view>
+            <view class="text">
+                <view class="word">我</view>
+                <view class="word">的</view>
+            </view>
+        </view>
+    </block>
+</view>

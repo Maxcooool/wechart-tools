@@ -1,0 +1,11 @@
+1.🐛在小程序中，系统默认的tabbar和页面同级，导致页面的弹窗不能覆盖tabbar
+    🔨使用自定义tabbar组件， 同时保留空的custom-tab-bar组件，解决切换闪动
+
+2.🚀websocket使用
+    🔨utils已封装好类，在app.js中声明并初始化
+    import { WS } from './utils/websocket';
+    🔨onLanuch时挂载到全局globalData
+    this.globalData.ws = new WS('wss://xxxxx/pushWebSockets/' + (await this.getOpenid()));
+    页面中接受消息 => web_test.js
+    
+

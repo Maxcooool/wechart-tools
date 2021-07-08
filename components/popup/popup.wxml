@@ -1,0 +1,21 @@
+<view hidden="{{!visible}}" class="popup">
+    <view class="mask {{ contentVisible ? 'show' : 'hide' }}" bind:tap="onMaskClose"></view>
+    <view class="outer-box">
+        <view class="container {{ contentVisible ? 'show' : 'hide'}}" bind:animationend="onAnimaitonEnd">
+            <view class="about">
+                <text>长江江豚是全球唯一的江豚淡水亚种，长江流域唯一的水生哺乳动物。由于自然环境的变迁、水位下降、非法捕捞等因素影响，近20年来种群快速衰减，根据2018年的统计数据，目前仅存约1012头。
+                </text>
+                <text>
+                    BOSS 中国公益大使张靓颖实地探访宜昌协助巡护项目点。以「守护」为主题，拍摄聚焦于江豚保护的公益纪录片，用最贴近的视角，真实还原长江江豚的保护近况。
+                </text>
+                <text>
+                    张靓颖表示：
+                </text><text>“我与江豚结缘已经十余年，能够一直为保护这一可爱的生物做出努力令我倍感欣慰。很高兴看到越来越多的组织、企业和个人关注长江江豚的保护，希望通过我们的共同努力，能够再现长江水清岸绿，江豚逐浪的美好景象。”
+                </text>
+            </view>
+            <view class="close-icon" bindtap="onClose">
+                <image src="https://hbcdn.herdsric.com/hugoboss-cvd-miniapp-2021/img/smile/page3_cancel.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
